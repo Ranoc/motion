@@ -187,6 +187,10 @@ switchfilter off
 # triggers motion detection (default: 1500)
 threshold 1500
 
+# Threshold limit for number of changed pixels in an image that
+# triggers motion detection (default: 200000)
+threshold_limit 200000
+
 # Automatically tune the threshold down if possible (default: off)
 threshold_tune off
 

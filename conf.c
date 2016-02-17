@@ -48,6 +48,7 @@ struct config conf_template = {
     quality:                        DEF_QUALITY,
     rotate_deg:                     0,
     max_changes:                    DEF_CHANGES,
+    min_changes:                    DEF_CHANGESLIMIT,
     threshold_tune:                 0,
     output_pictures:                "on",
     motion_img:                     0,
@@ -522,6 +523,15 @@ config_param config_params[] = {
     "# triggers motion detection (default: 1500)",
     0,
     CONF_OFFSET(max_changes),
+    copy_int,
+    print_int
+    },
+    {
+    "threshold_limit",
+    "# Threshold limit for number of changed pixels in an image that\n"
+    "# triggers motion detection (default: 200000)",
+    0,
+    CONF_OFFSET(min_changes),
     copy_int,
     print_int
     },

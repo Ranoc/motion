@@ -1,4 +1,5 @@
 Summary of Changes
+   * Add threshold_limit option http://www.lavrsen.dk/foswiki/bin/view/Motion/ConfigOptionThreshold
    * Added suggestion for including pkgconf as part of build requirements
    * Swap sequence of user ffmpeg path and PKG_CONFIG_PATH
    * Allow : in non standard locations of netcam_url path.

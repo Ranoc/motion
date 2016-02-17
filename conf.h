@@ -28,6 +28,7 @@ struct config {
     int quality;
     int rotate_deg;
     int max_changes;
+    int min_changes;
     int threshold_tune;
     const char *output_pictures;
     int ffmpeg_duplicate_frames;

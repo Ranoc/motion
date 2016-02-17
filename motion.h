@@ -132,6 +132,7 @@
 #define DEF_HEIGHT             288
 #define DEF_QUALITY             75
 #define DEF_CHANGES           1500
+#define DEF_CHANGESLIMIT    200000
 
 #define DEF_MAXFRAMERATE       100
 #define DEF_NOISELEVEL          32
@@ -365,6 +366,7 @@ struct context {
 
     int noise;
     int threshold;
+    int threshold_limit;
     int diffs_last[THRESHOLD_TUNE_LENGTH];
     int smartmask_speed;
 
