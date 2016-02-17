@@ -7,5 +7,4 @@ GITDIR=".git"
 if [ -d "$GITDIR" ]; then 
   SNV_VERSION=`git show -s --format=%h`
 fi
-echo -n "Unofficial-Git-$SNV_VERSION"
-
+echo -n "3.4.1~rc01"
